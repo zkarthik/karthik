@@ -1,12 +1,9 @@
-## Welcome to GitHub Pages
+## Data Driven decision making
 
-You can use the [editor on GitHub](https://github.com/zkarthik/karthik/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### About
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+My name is Karthik Shanmugam. I am a technology enthusiast with business acumen, wisdom seeker, lifelong learner. I try my best to learn and incorporate the best practices and frameworks to be used at workplaces across different levels. I have been leading three  strong squad which built habit-forming, end to end tech products with great customer experience at scale. I keep Transparency, Effective Communication and expectations setting back and forth at the highest priority.
 
 ```markdown
 Syntax highlighted code block
