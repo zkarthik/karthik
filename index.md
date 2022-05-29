@@ -3,10 +3,12 @@
 
 ### About
 
-My name is Karthik Shanmugam. I am a technology enthusiast with business acumen, wisdom seeker, lifelong learner. I try my best to learn and incorporate the best practices and frameworks to be used at workplaces across different levels. I have been leading three  strong squad which built habit-forming, end to end tech products with great customer experience at scale. I keep Transparency, Effective Communication and expectations setting back and forth at the highest priority.
+My name is Karthik Shanmugam. I am a technology enthusiast with business acumen, wisdom seeker, lifelong learner. I try my best to learn and incorporate the best practices and frameworks to be used at workplaces across different levels. I have been leading three strong team which built habit-forming, end to end technology solutions with great customer experience at scale. I keep Transparency, Effective Communication and expectations setting back and forth at the highest priority.
 
 ```markdown
 Syntax highlighted code block
+
+### Certifications
 
 # Header 1
 ## Header 2
