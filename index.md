@@ -5,10 +5,12 @@
 
 My name is Karthik Shanmugam. I am a technology enthusiast with business acumen, wisdom seeker, lifelong learner. I try my best to learn and incorporate the best practices and frameworks to be used at workplaces across different levels. I have been leading three strong team which built habit-forming, end to end technology solutions with great customer experience at scale. Being transparent, Effective Communication and expectations setting back and forth are my highest priority.
 
+### Certifications
+1. Google Cloud Digital Leader
 ```markdown
 Syntax highlighted code block
 
-### Certifications
+
 
 # Header 1
 ## Header 2
