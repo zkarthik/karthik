@@ -7,6 +7,8 @@ My name is Karthik Shanmugam. I am a technology enthusiast with business acumen,
 
 ### Certifications
 1. Google Cloud Digital Leader
+
+
 ```markdown
 Syntax highlighted code block
 
