@@ -5,9 +5,11 @@
 
 My name is Karthik Shanmugam. I am a technology enthusiast with business acumen, wisdom seeker, lifelong learner. I try my best to learn and incorporate the best practices and frameworks to be used at workplaces across different levels. I have been leading three strong team which built habit-forming, end to end technology solutions with great customer experience at scale. Being transparent, Effective Communication and expectations setting back and forth are my highest priority.
 
+
 ### Certifications
 1. [Google Cloud Digital Leader](https://www.credential.net/c974edbd-d050-40bc-810b-2cf6e79717c4?key=06187710a66a07a265418e3ce57f152355463e4832aeaf02d0079e1ae2995b11)
 2. [Microsoft Azure Fundamentals.AZ-900](https://www.credly.com/badges/3ecdb8d6-a41d-4cef-b3e1-c93e800bbbac/public_url)
+
 
 <!--
 ```markdown
