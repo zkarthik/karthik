@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+   
+<title>SQL vs. NoSQL </title>
+
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://zkarthik.github.io/karthik">karthik.github.io</a></h1>
+      
+
+      <h1 id="sql-vs-nosql">SQL vs. NoSQL</h1>
+
+<h2 id="common-types-of-nosql">Common types of NoSQL</h2>
+<h3 id="key-value-stores">Key-value stores</h3>
+<ul>
+  <li>Array of key-value pairs. The “key” is an attribute name.</li>
+  <li>Redis, Vodemort, Dynamo.</li>
+</ul>
+
+<h3 id="document-databases">Document databases</h3>
+<ul>
+  <li>Data is stored in documents.</li>
+  <li>Documents are grouped in collections.</li>
+  <li>Each document can have an entirely different structure.</li>
+  <li>CouchDB, MongoDB.</li>
+</ul>
+
+<h3 id="wide-column--columnar-databases">Wide-column / columnar databases</h3>
+<ul>
+  <li>Column families - containers for rows.</li>
+  <li>No need to know all the columns up front.</li>
+  <li>Each row can have different number of columns.</li>
+  <li>Cassandra, HBase.</li>
+</ul>
+
+<h3 id="graph-database">Graph database</h3>
+<ul>
+  <li>Data is stored in graph structures
+    <ul>
+      <li>Nodes: entities</li>
+      <li>Properties: information about the entities</li>
+      <li>Lines: connections between the entities</li>
+    </ul>
+  </li>
+  <li>Neo4J, InfiniteGraph</li>
+</ul>
+
+<h2 id="differences-between-sql-and-nosql">Differences between SQL and NoSQL</h2>
+<h3 id="storage">Storage</h3>
+<ul>
+  <li>SQL: store data in tables.</li>
+  <li>NoSQL: have different data storage models.</li>
+</ul>
+
+<h3 id="schema">Schema</h3>
+<ul>
+  <li>SQL
+    <ul>
+      <li>Each record conforms to a fixed schema.</li>
+      <li>Schema can be altered, but it requires modifying the whole database.</li>
+    </ul>
+  </li>
+  <li>NoSQL:
+    <ul>
+      <li>Schemas are dynamic.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="querying">Querying</h3>
+<ul>
+  <li>SQL
+    <ul>
+      <li>Use SQL (structured query language) for defining and manipulating the data.</li>
+    </ul>
+  </li>
+  <li>NoSQL
+    <ul>
+      <li>Queries are focused on a collection of documents.</li>
+      <li>UnQL (unstructured query language).</li>
+      <li>Different databases have different syntax.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="scalability">Scalability</h3>
+<ul>
+  <li>SQL
+    <ul>
+      <li>Vertically scalable (by increasing the horsepower: memory, CPU, etc) and expensive.</li>
+      <li>Horizontally scalable (across multiple servers); but it can be challenging and time-consuming.</li>
+    </ul>
+  </li>
+  <li>NoSQL
+    <ul>
+      <li>Horizontablly scalable (by adding more servers) and cheap.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="acid">ACID</h3>
+<ul>
+  <li>Atomicity, consistency, isolation, durability</li>
+  <li>SQL
+    <ul>
+      <li>ACID compliant</li>
+      <li>Data reliability</li>
+      <li>Gurantee of transactions</li>
+    </ul>
+  </li>
+  <li>NoSQL
+    <ul>
+      <li>Most sacrifice ACID compliance for performance and scalability.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="which-one-to-use">Which one to use?</h2>
+<h3 id="sql">SQL</h3>
+<ul>
+  <li>Ensure ACID compliance.
+    <ul>
+      <li>Reduce anomalies.</li>
+      <li>Protect database integrity.</li>
+    </ul>
+  </li>
+  <li>Data is structured and unchanging.</li>
+</ul>
+
+<h3 id="nosql">NoSQL</h3>
+<ul>
+  <li>Data has little or no structure.</li>
+  <li>Make the most of cloud computing and storage.
+    <ul>
+      <li>Cloud-based storage requires data to be easily spread across multiple servers to scale up.</li>
+    </ul>
+  </li>
+  <li>Rapid development.
+    <ul>
+      <li>Frequent updates to the data structure.</li>
+    </ul>
+  </li>
+</ul>
+
+
+      
+    </div>
+
+  </body>
+</html>
