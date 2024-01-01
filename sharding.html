@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+ 
+<title>Sharding / Data Partitioning </title>
+
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">      
+    
+      <h1><a href="https://zkarthik.github.io/">zkarthik.github.io</a></h1>
+
+      <h1 id="sharding--data-partitioning">Sharding / Data Partitioning</h1>
+
+<h2 id="partitioning-methods">Partitioning methods</h2>
+<ul>
+  <li>Horizontal partitioning
+    <ul>
+      <li>Range based sharding.</li>
+      <li>Put different rows into different tables.</li>
+      <li>Con
+        <ul>
+          <li>If the value whose range is used for sharding isn’t chosen carefully, the partitioning scheme will lead to unbalanced servers.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Vertical partitioning
+    <ul>
+      <li>Divide data for a specific feature to their own server.</li>
+      <li>Pro
+        <ul>
+          <li>Straightforward to implement.</li>
+          <li>Low impact on the application.</li>
+        </ul>
+      </li>
+      <li>Con
+        <ul>
+          <li>To support growth of the application, a database may need further partitioning.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Directory-based partitioning
+    <ul>
+      <li>A lookup service that knows the partitioning scheme and abstracts it away from the database access code.</li>
+      <li>Allow addition of db servers or change of partitioning schema without impacting application.</li>
+      <li>Con
+        <ul>
+          <li>Can be a single point of failure.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="partitioning-criteria">Partitioning criteria</h2>
+<ul>
+  <li>Key or hash-based partitioning
+    <ul>
+      <li>Apply a hash function to some key attribute of the entry to get the partition number.</li>
+      <li>Problem
+        <ul>
+          <li>Adding new servers may require changing the hash function, which would need redistribution of data and downtime for the service.</li>
+          <li>Workaround: <a href="https://en.wikipedia.org/wiki/Consistent_hashing">consistent hashing</a>.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>List partitioning
+    <ul>
+      <li>Each partition is assigned a list of values.</li>
+    </ul>
+  </li>
+  <li>Round-robin partitioning
+    <ul>
+      <li>With <code class="language-plaintext highlighter-rouge">n</code> partitions, the <code class="language-plaintext highlighter-rouge">i</code> tuple is assigned to partition <code class="language-plaintext highlighter-rouge">i % n</code>.</li>
+    </ul>
+  </li>
+  <li>Composite partitioning
+    <ul>
+      <li>Combine any of above partitioning schemes to devise a new scheme.</li>
+      <li>Consistent hashing is a composite of hash and list partitioning.
+        <ul>
+          <li>Key -&gt; reduced key space through hash -&gt; list -&gt; partition.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="common-problems-of-sharding">Common problems of sharding</h2>
+<p>Most of the constraints are due to the fact that operations across multiple tables or multiple rows in the same table will no longer run on the same server.</p>
+
+<ul>
+  <li>Joins and denormalization
+    <ul>
+      <li>Joins will not be performance efficient since data has to be compiled from multiple servers.</li>
+      <li>Workaround: denormalize the database so that queries can be performed from a single table. But this can lead to data inconsistency.</li>
+    </ul>
+  </li>
+  <li>Referential integrity
+    <ul>
+      <li>Difficult to enforce data integrity constraints (e.g. foreign keys).</li>
+      <li>Workaround
+        <ul>
+          <li>Referential integrity is enforced by application code.</li>
+          <li>Applications can run SQL jobs to clean up dangling references.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Rebalancing
+    <ul>
+      <li>Necessity of rebalancing
+        <ul>
+          <li>Data distribution is not uniform.</li>
+          <li>A lot of load on one shard.</li>
+        </ul>
+      </li>
+      <li>Create more db shards or rebalance existing shards changes partitioning scheme and requires data movement.</li>
+    </ul>
+  </li>
+</ul>
+
+
+      
+    </div>
+
+  </body>
+</html>
